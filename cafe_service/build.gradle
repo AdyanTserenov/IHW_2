@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.hibernate.orm:hibernate-core:6.4.4.Final"
+    implementation 'org.hibernate:hibernate-c3p0:5.4.30.Final'
+    implementation 'org.postgresql:postgresql:42.2.10'
+    implementation 'ch.qos.logback:logback-classic:0.9.26'
+}
+
+test {
+    useJUnitPlatform()
+}
